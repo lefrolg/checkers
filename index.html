@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Checkers</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="board">
+           <div class="move">
+               <div></div>
+               <div class="move-checker"> <img> </div>
+           </div>
+            <table>
+                <tr>
+                    <td data-y='0' data-x='0'></td>
+                    <td data-y='1' data-x='0'></td>
+                    <td data-y='2' data-x='0'></td>
+                    <td data-y='3' data-x='0'></td>
+                    <td data-y='4' data-x='0'></td>
+                    <td data-y='5' data-x='0'></td>
+                    <td data-y='6' data-x='0'></td>
+                    <td data-y='7' data-x='0'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='1'></td>
+                    <td data-y='1' data-x='1'></td>
+                    <td data-y='2' data-x='1'></td>
+                    <td data-y='3' data-x='1'></td>
+                    <td data-y='4' data-x='1'></td>
+                    <td data-y='5' data-x='1'></td>
+                    <td data-y='6' data-x='1'></td>
+                    <td data-y='7' data-x='1'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='2'></td>
+                    <td data-y='1' data-x='2'></td>
+                    <td data-y='2' data-x='2'></td>
+                    <td data-y='3' data-x='2'></td>
+                    <td data-y='4' data-x='2'></td>
+                    <td data-y='5' data-x='2'></td>
+                    <td data-y='6' data-x='2'></td>
+                    <td data-y='7' data-x='2'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='3'></td>
+                    <td data-y='1' data-x='3'></td>
+                    <td data-y='2' data-x='3'></td>
+                    <td data-y='3' data-x='3'></td>
+                    <td data-y='4' data-x='3'></td>
+                    <td data-y='5' data-x='3'></td>
+                    <td data-y='6' data-x='3'></td>
+                    <td data-y='7' data-x='3'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='4'></td>
+                    <td data-y='1' data-x='4'></td>
+                    <td data-y='2' data-x='4'></td>
+                    <td data-y='3' data-x='4'></td>
+                    <td data-y='4' data-x='4'></td>
+                    <td data-y='5' data-x='4'></td>
+                    <td data-y='6' data-x='4'></td>
+                    <td data-y='7' data-x='4'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='5'></td>
+                    <td data-y='1' data-x='5'></td>
+                    <td data-y='2' data-x='5'></td>
+                    <td data-y='3' data-x='5'></td>
+                    <td data-y='4' data-x='5'></td>
+                    <td data-y='5' data-x='5'></td>
+                    <td data-y='6' data-x='5'></td>
+                    <td data-y='7' data-x='5'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='6'></td>
+                    <td data-y='1' data-x='6'></td>
+                    <td data-y='2' data-x='6'></td>
+                    <td data-y='3' data-x='6'></td>
+                    <td data-y='4' data-x='6'></td>
+                    <td data-y='5' data-x='6'></td>
+                    <td data-y='6' data-x='6'></td>
+                    <td data-y='7' data-x='6'></td>
+                </tr>
+                <tr>
+                    <td data-y='0' data-x='7'></td>
+                    <td data-y='1' data-x='7'></td>
+                    <td data-y='2' data-x='7'></td>
+                    <td data-y='3' data-x='7'></td>
+                    <td data-y='4' data-x='7'></td>
+                    <td data-y='5' data-x='7'></td>
+                    <td data-y='6' data-x='7'></td>
+                    <td data-y='7' data-x='7'></td>
+                </tr>   
+            </table>
+
+            <button class="newGame">New game</button>
+            <div class="dimming-modal winner-box" hidden>
+                <div class="winner-modal">
+                    <span class="winner"></span> win
+                    <br>
+                    <button class="newGame">New game</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./js/main.js"></script>
+    <script>
+
+        let check = new Checkers;
+        check.init('board')
+    </script>
+</body>
+</html>
